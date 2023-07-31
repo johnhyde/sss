@@ -95,7 +95,7 @@
         [~ ~ *]
       =.  stale.u.u.flow  &
       :_  0/(~(put by sub) current u.flow)
-      ~[(on-rock-poke fake=& current u.u.flow ~)]
+      ~[(on-rock-poke fake=| current u.u.flow ~)]
     ::
         [~ ~]
       :_  0/(~(del by sub) current)  :_  ~
@@ -113,7 +113,7 @@
     ?:  ?=(%tomb what.res)
       =/  =flow  old(stale &)
       :_  0/(~(put by sub) current `flow)  :_  ~
-      (on-rock-poke fake=& current flow ~)
+      (on-rock-poke fake=| current flow ~)
     ::
     =/  [wave=(unit wave:lake) new=(unit flow)]
       ?-  what.res
@@ -125,7 +125,7 @@
       ==
     ?~  new  `0/sub
     :_  0/(~(put by sub) current new)  :_  ~
-    (on-rock-poke fake=& current u.new wave)
+    (on-rock-poke fake=| current u.new wave)
   ::
   ++  handle-fake-on-rock
     |=  =(on-rock:poke lake paths)
@@ -133,7 +133,7 @@
     ?~  flow=(~(get by sub) [src from path]:on-rock)  ~
     ?~  u.flow  ~
     ?.  =([stale fail rock]:u.u.flow [stale fail rock]:on-rock)  ~
-    ~[(on-rock-poke fake=| [src from path]:on-rock u.u.flow wave.on-rock)]
+    ~[(on-rock-poke fake=& [src from path]:on-rock u.u.flow wave.on-rock)]
   ::
   ::  Non-public facing arms below
   ::
